@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  rgb(188, 193, 249);
+}
+
+.calculator {
+    width: 300px;
+    height: 500px;
+    background: black;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+.display {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-family: arial;
+    user-select: none;
+}
+.buttons {
+    position: relative;
+    top: 24px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "button1 button2 button3 button4"
+    "button5 button6 button7 button8"
+    "button9 button10 button11 button12"
+    "button13 button14 button15 button16"
+    "button17 button17 button18 button19";
+    gap: 20px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+.orange {
+    background-color: orange;
+}
+
+.orange:hover {
+    background-color: rgb(251, 188, 71);
+}
+
+.silver {
+    color: black;
+    background-color: silver;
+}
+
+.silver:hover {
+    background-color: rgb(221, 221, 221);
+}
+
+.gray {
+    background-color: rgb(54, 54, 54);
+}
+
+.gray:hover {
+    background-color: rgb(74, 74, 74);
+}
+
+.button1 {
+    grid-area: button1;
+}
+
+.button2 {
+    grid-area: button2;
+}
+.button3 {
+    grid-area: button3;
+}
+.button4 {
+    grid-area: button4;
+}
+
+.button5 {
+    grid-area: button5;
+}
+
+.button6 {
+    grid-area: button6;
+}
+.button7 {
+    grid-area: button7;
+}
+.button8 {
+    grid-area: button8;
+}
+.button9 {
+    grid-area: button9;
+}
+.button10 {
+    grid-area: button10;
+}
+.button11 {
+    grid-area: button11;
+}
+.button12 {
+    grid-area: button12;
+}
+.button13 {
+    grid-area: button13;
+}
+.button14 {
+    grid-area: button14;
+}
+.button15 {
+    grid-area: button15;
+}
+.button16 {
+    grid-area: button16;
+}
+.button17 {
+    width: 120px;
+    border-radius: 25px;
+    grid-area: button17
+}
+.button18 {
+    grid-area: button18;
+}
+.button19 {
+    grid-area: button19;
+}
+
+.theme {
+    width: 140px;
+    height: 40px;
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+
